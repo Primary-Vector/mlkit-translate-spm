@@ -46,7 +46,10 @@ let package = Package(
                 .product(name: "FBLPromises", package: "promises"),
                 .product(name: "ZipArchive", package: "ZipArchive"),
             ],
-            path: "Sources"
+            path: "Sources",
+            resources: [
+                .copy("MLKitTranslate_resource.bundle"),
+            ]
         ),
         // Vendored GoogleToolboxForMac (upstream v6 SPM is broken in Xcode)
         .target(

@@ -5,13 +5,10 @@ import PackageDescription
 ///
 /// The three MLKit frameworks are pre-built binaries distributed as
 /// xcframework archives via GitHub Releases. Source dependencies
-/// (GoogleToolboxForMac, GoogleUtilities, etc.) are pulled from their
-/// official SPM-compatible repositories.
+/// are pulled from official repos or vendored (GoogleToolboxForMac).
 ///
-/// To update the MLKit binaries:
-///   1. Run `pod install` in a throwaway project to fetch new versions
-///   2. Convert .framework → .xcframework (see scripts/)
-///   3. Zip, upload to a new GitHub Release, update checksums below
+/// GoogleToolboxForMac is vendored because upstream v6's GTMDefines
+/// target is broken in Xcode (headers-only ObjC target produces no .o).
 let package = Package(
     name: "MLKitTranslateSPM",
     platforms: [.iOS(.v16)],
@@ -37,6 +34,9 @@ let package = Package(
                 "MLKitTranslate",
                 "MLKitCommon",
                 "MLKitNaturalLanguage",
+                "GTMLogger",
+                "GTMNSData_zlib",
+                "GTMStringEncoding",
                 .product(name: "GoogleDataTransport", package: "GoogleDataTransport"),
                 .product(name: "GULEnvironment", package: "GoogleUtilities"),
                 .product(name: "GULLogger", package: "GoogleUtilities"),
@@ -47,6 +47,32 @@ let package = Package(
                 .product(name: "ZipArchive", package: "ZipArchive"),
             ],
             path: "Sources"
+        ),
+        // Vendored GoogleToolboxForMac (upstream v6 SPM is broken in Xcode)
+        .target(
+            name: "GTMDefines",
+            path: "VendoredSources/GTM/Defines",
+            publicHeadersPath: "Public"
+        ),
+        .target(
+            name: "GTMLogger",
+            dependencies: ["GTMDefines"],
+            path: "VendoredSources/GTM/Logger",
+            exclude: ["GTMLogger+ASL.m", "GTMLoggerRingBufferWriter.m", "Resources"],
+            publicHeadersPath: "Public/Foundation"
+        ),
+        .target(
+            name: "GTMNSData_zlib",
+            dependencies: ["GTMDefines"],
+            path: "VendoredSources/GTM/NSData_zlib",
+            publicHeadersPath: "Public/Foundation",
+            linkerSettings: [.linkedLibrary("z")]
+        ),
+        .target(
+            name: "GTMStringEncoding",
+            dependencies: ["GTMDefines"],
+            path: "VendoredSources/GTM/StringEncoding",
+            publicHeadersPath: "Public/Foundation"
         ),
         // Binary targets — hosted as GitHub Release assets
         .binaryTarget(

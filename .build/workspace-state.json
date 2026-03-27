@@ -1,0 +1,191 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "mlkit-spm",
+          "kind" : "root",
+          "location" : "/private/tmp/mlkit-spm",
+          "name" : "mlkit-spm"
+        },
+        "path" : "/private/tmp/mlkit-spm/.build/artifacts/mlkit-spm/MLKitCommon/MLKitCommon.xcframework",
+        "source" : {
+          "checksum" : "129f218bc5e783bf60d410b18be26581194d2ec00b9fcc4acf768e45d5418a8f",
+          "type" : "remote",
+          "url" : "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.1/MLKitCommon.xcframework.zip"
+        },
+        "targetName" : "MLKitCommon"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "mlkit-spm",
+          "kind" : "root",
+          "location" : "/private/tmp/mlkit-spm",
+          "name" : "mlkit-spm"
+        },
+        "path" : "/private/tmp/mlkit-spm/.build/artifacts/mlkit-spm/MLKitNaturalLanguage/MLKitNaturalLanguage.xcframework",
+        "source" : {
+          "checksum" : "4e9d6991f419d7195b09b8c4f6271f0923a070616007d6cd9ca3f3b2da3b6483",
+          "type" : "remote",
+          "url" : "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.1/MLKitNaturalLanguage.xcframework.zip"
+        },
+        "targetName" : "MLKitNaturalLanguage"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "mlkit-spm",
+          "kind" : "root",
+          "location" : "/private/tmp/mlkit-spm",
+          "name" : "mlkit-spm"
+        },
+        "path" : "/private/tmp/mlkit-spm/.build/artifacts/mlkit-spm/MLKitTranslate/MLKitTranslate.xcframework",
+        "source" : {
+          "checksum" : "af95d094e77d6bb91b832a4432414fb82738eff6a51fe1ae195979b128c32928",
+          "type" : "remote",
+          "url" : "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.1/MLKitTranslate.xcframework.zip"
+        },
+        "targetName" : "MLKitTranslate"
+      }
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "google-toolbox-for-mac",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/google/google-toolbox-for-mac.git",
+          "name" : "GoogleToolboxForMac"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "01e4def320cd5ccb3562355eb424073f2b6cafb7",
+            "version" : "6.0.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "google-toolbox-for-mac"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "googledatatransport",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/google/GoogleDataTransport.git",
+          "name" : "GoogleDataTransport"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "617af071af9aa1d6a091d59a202910ac482128f9",
+            "version" : "10.1.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "GoogleDataTransport"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "googleutilities",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/google/GoogleUtilities.git",
+          "name" : "GoogleUtilities"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "60da361632d0de02786f709bdc0c4df340f7613e",
+            "version" : "8.1.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "GoogleUtilities"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "gtm-session-fetcher",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/google/gtm-session-fetcher.git",
+          "name" : "GTMSessionFetcher"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "a2ab612cb980066ee56d90d60d8462992c07f24b",
+            "version" : "3.5.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "gtm-session-fetcher"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "nanopb",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/firebase/nanopb.git",
+          "name" : "nanopb"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "b7e1104502eca3a213b46303391ca4d3bc8ddec1",
+            "version" : "2.30910.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "nanopb"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "promises",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/google/promises.git",
+          "name" : "Promises"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "540318ecedd63d883069ae7f1ed811a2df00b6ac",
+            "version" : "2.4.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "promises"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "ziparchive",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/ZipArchive/ZipArchive.git",
+          "name" : "ZipArchive"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "df35718ea19a94e015b91dc4881dee028ce4cdba",
+            "version" : "2.6.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "ZipArchive"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

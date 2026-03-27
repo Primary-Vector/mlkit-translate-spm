@@ -52,17 +52,17 @@ let package = Package(
         .binaryTarget(
             name: "MLKitTranslate",
             url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.0/MLKitTranslate.xcframework.zip",
-            checksum: "540ebc74febf1129cc445832fe4f5c41ac89e828165a15c7f656c4d3111af50b"
+            checksum: "af95d094e77d6bb91b832a4432414fb82738eff6a51fe1ae195979b128c32928"
         ),
         .binaryTarget(
             name: "MLKitCommon",
             url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.0/MLKitCommon.xcframework.zip",
-            checksum: "e8fbb5d9abe5669b5d02aee68ba0f7d2906dd181a3456f948cbc53382bb24c40"
+            checksum: "129f218bc5e783bf60d410b18be26581194d2ec00b9fcc4acf768e45d5418a8f"
         ),
         .binaryTarget(
             name: "MLKitNaturalLanguage",
             url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.0/MLKitNaturalLanguage.xcframework.zip",
-            checksum: "0e6aec4b458b1fbedebd1901d1f7a0a09680a037cf9219f1e5117e0f8160bd55"
+            checksum: "4e9d6991f419d7195b09b8c4f6271f0923a070616007d6cd9ca3f3b2da3b6483"
         ),
     ]
 )

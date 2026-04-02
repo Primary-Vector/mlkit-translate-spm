@@ -11,7 +11,7 @@ import PackageDescription
 /// target is broken in Xcode (headers-only ObjC target produces no .o).
 let package = Package(
     name: "MLKitTranslateSPM",
-    platforms: [.iOS(.v16)],
+    platforms: [.iOS(.v18)],
     products: [
         .library(
             name: "MLKitTranslateSPM",
@@ -80,18 +80,18 @@ let package = Package(
         // Binary targets — hosted as GitHub Release assets
         .binaryTarget(
             name: "MLKitTranslate",
-            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.1/MLKitTranslate.xcframework.zip",
-            checksum: "af95d094e77d6bb91b832a4432414fb82738eff6a51fe1ae195979b128c32928"
+            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.2/MLKitTranslate.xcframework.zip",
+            checksum: "651de5eae436f6a688a7485df45a64ba21e424042ff713b8d06003deeef94975"
         ),
         .binaryTarget(
             name: "MLKitCommon",
-            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.1/MLKitCommon.xcframework.zip",
-            checksum: "129f218bc5e783bf60d410b18be26581194d2ec00b9fcc4acf768e45d5418a8f"
+            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.2/MLKitCommon.xcframework.zip",
+            checksum: "f90d1568131acdf4942d81fd8e4532b0d578bc4816ce0abec11e03a125474a24"
         ),
         .binaryTarget(
             name: "MLKitNaturalLanguage",
-            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.1/MLKitNaturalLanguage.xcframework.zip",
-            checksum: "4e9d6991f419d7195b09b8c4f6271f0923a070616007d6cd9ca3f3b2da3b6483"
+            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.2/MLKitNaturalLanguage.xcframework.zip",
+            checksum: "6656ffd6af88c49c1f6c7b7792ea0c0d90fdbddd9fb4979aa069fda27df910ea"
         ),
     ]
 )

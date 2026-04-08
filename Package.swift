@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.0
 import PackageDescription
 
 /// SPM wrapper for Google ML Kit Translate.
@@ -80,17 +80,17 @@ let package = Package(
         // Binary targets — hosted as GitHub Release assets
         .binaryTarget(
             name: "MLKitTranslate",
-            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.4/MLKitTranslate.xcframework.zip",
+            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.5/MLKitTranslate.xcframework.zip",
             checksum: "651de5eae436f6a688a7485df45a64ba21e424042ff713b8d06003deeef94975"
         ),
         .binaryTarget(
             name: "MLKitCommon",
-            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.4/MLKitCommon.xcframework.zip",
+            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.5/MLKitCommon.xcframework.zip",
             checksum: "f90d1568131acdf4942d81fd8e4532b0d578bc4816ce0abec11e03a125474a24"
         ),
         .binaryTarget(
             name: "MLKitNaturalLanguage",
-            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.4/MLKitNaturalLanguage.xcframework.zip",
+            url: "https://github.com/Primary-Vector/mlkit-translate-spm/releases/download/8.0.5/MLKitNaturalLanguage.xcframework.zip",
             checksum: "6656ffd6af88c49c1f6c7b7792ea0c0d90fdbddd9fb4979aa069fda27df910ea"
         ),
     ]
